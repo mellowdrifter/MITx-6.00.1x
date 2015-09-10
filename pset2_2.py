@@ -14,6 +14,6 @@ while unpaid >= 0:
     unpaid = newBalance - monthlyPaymentRate
     newBalance = unpaid + addInterest(unpaid)
     month = month + 1
-  monthlyPaymentRate = monthlyPaymentRate + 10
+  monthlyPaymentRate += 10
   
 print 'Lowest Payment:', monthlyPaymentRate - 10
