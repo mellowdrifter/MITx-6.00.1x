@@ -4,10 +4,7 @@
 #
 
 # -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
+
 
 import random
 import string
@@ -117,7 +114,7 @@ def hangman(secretWord):
     chosenLetters = []
     print 'Welcome to the game, Hangman!'
     print 'I am thinking of a word that is ' + str(len(secretWord)) + ' letters long.'
-    while (not isWordGuessed(secretWord, chosenLetters) or guesses > 0):
+    while True:
         print '-------------'
         print 'You have ' + str(guesses) + ' guesses left.'
         print 'Available letters: ' + getAvailableLetters(chosenLetters)
