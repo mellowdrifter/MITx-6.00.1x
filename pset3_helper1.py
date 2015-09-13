@@ -5,7 +5,7 @@ def isWordGuessed(secretWord, lettersGuessed):
     returns: boolean, True if all the letters of secretWord are in
     lettersGuessed; False otherwise
     '''
-    if len(secretWord) == 1 and secretWord in lettersGuessed:
+    if len(secretWord) == 0:
         return True
     else:
         return secretWord[0] in lettersGuessed \
